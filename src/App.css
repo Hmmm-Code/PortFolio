@@ -52,7 +52,7 @@ a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  color: #ffbd39;
+  color: #ddd;
   text-decoration: none;
   background-color: transparent;
 }
@@ -60,12 +60,12 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #000;
+  color: #212529;
   outline: none !important;
 }
 
 a:hover {
-  color: #000;
+  color: #212529;
   text-decoration: none;
 }
 *,
@@ -400,6 +400,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
+  margin-right: 20px;
 }
 
 .btn.btn-primary {
@@ -513,4 +514,154 @@ a:hover {
 
 .services-1:hover h3:after {
   background: #000000;
+}
+
+/* Skills Section */
+.col-md-6 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.progress-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.progress-wrap h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.progress {
+  height: 10px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #1a1a1a;
+  overflow: visible;
+  display: -webkit-box;
+  display: -ms-flexbox;
+
+  height: 1rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.progress-bar {
+  background: #ffbd39;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  overflow: visible;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  width: 50%;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: -38px;
+  right: 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.progress-bar:after {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  content: "";
+  background: #ffbd39;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+/* Content Section */
+.contact-section .box {
+  width: 100%;
+  display: block;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.contact-section .box .icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  margin-bottom: 2em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.contact-section .box .icon span {
+  color: #ffbd39;
+  font-size: 30px;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.contact-section .box h3 {
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.contact-section .col-md-6 {
+  flex: auto;
+  max-width: 50%;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.contact-section .contact-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.block-9 .form-control {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-size: 15px;
 }

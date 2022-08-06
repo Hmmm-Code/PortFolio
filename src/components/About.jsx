@@ -60,6 +60,9 @@ const About = () => {
                   <a href="#" class="btn btn-primary py-3 px-3">
                     Download CV
                   </a>
+                  <a href="#" class="btn btn-primary py-3 px-3">
+                    Hire me
+                  </a>
                 </p>
               </div>
             </div>
