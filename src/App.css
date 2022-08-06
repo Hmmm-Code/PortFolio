@@ -3,12 +3,40 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+
   font-weight: 400;
-  line-height: 1.5;
   color: #212529;
   text-align: left;
   background: #000;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #999999;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  line-height: 1.5;
+  color: white;
+  font-weight: 400;
+}
+p {
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+}
+
+span {
+  line-height: 1.8;
+  font-weight: 400;
+  color: #fff;
 }
 
 code {
@@ -19,6 +47,26 @@ code {
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+}
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  color: #ffbd39;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+  outline: none !important;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
 }
 *,
 *::before,
@@ -206,4 +254,263 @@ li {
   -ms-transform: scaleX(1);
   -o-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+/* About Section */
+.ftco-no-pb {
+  padding-bottom: 0 !important;
+}
+.ftco-section {
+  padding: 7em 0;
+  position: relative;
+}
+
+.img,
+.blog-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sec-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1150px;
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.ftco-about .img-about {
+  width: 100%;
+  z-index: 0;
+  position: relative;
+}
+.ftco-about .img-about .img {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#bg-image {
+  background-image: url(./components/assets/WhatsApp\ Image\ 2022-08-04\ at\ 1.56.47\ PM.jpeg);
+  border-radius: 40px;
+}
+
+@media (min-width: 992px) {
+  .pl-lg-5,
+  .px-lg-5 {
+    padding-left: 3rem !important;
+  }
+}
+
+.heading-section {
+  position: relative;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+.ftco-animated {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.col-md-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.heading-section h1.big {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 7vw;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+  font-weight: 900;
+}
+
+.heading-section h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.ftco-about ul.about-info {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.ftco-about ul.about-info li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.ftco-about ul.about-info li span:first-child {
+  font-weight: 600;
+  color: #fff;
+  width: 130px;
+}
+
+.ftco-about ul.about-info li span {
+  width: calc(100% - 130px);
+}
+
+.ftco-about .counter-wrap .text p {
+  font-size: 20px;
+}
+.ftco-about .counter-wrap .text p span {
+  font-weight: 400;
+  color: #fff;
+}
+
+.ftco-about .counter-wrap .text p span.number {
+  font-weight: 600;
+  color: #ffbd39;
+}
+
+.btn {
+  cursor: pointer;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+  -moz-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.btn.btn-primary {
+  background: #ffbd39;
+  border: 1px solid #ffbd39 !important;
+  color: #000000 !important;
+  border-radius: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(202, 217, 62, 0.8));
+}
+
+/* Resume Section */
+.heading-section h1.big.big-2 {
+  right: 0;
+}
+
+.resume-wrap {
+  width: 100%;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 15px;
+}
+.resume-wrap .date {
+  font-weight: 900;
+  font-size: 26px;
+  color: #ffbd39;
+}
+.resume-wrap h2 {
+  font-size: 26px;
+}
+
+.resume-wrap .position {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+/* Services Section */
+.services-1:hover {
+  background: #ffbd39;
+}
+
+.services-1 {
+  margin-bottom: 40px;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  -webkit-box-shadow: 0px 20px 69px -27px rgb(0 0 0 / 17%);
+  -moz-box-shadow: 0px 20px 69px -27px rgba(0, 0, 0, 0.17);
+  box-shadow: 0px 20px 69px -27px rgb(0 0 0 / 17%);
+  border-radius: 15px;
+}
+
+.services-1 .icon {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.services-1 .icon i {
+  font-size: 60px;
+  line-height: 1;
+  color: #ffbd39;
+}
+
+.flaticon-analysis:before {
+  content: "\f102";
+}
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.services-1 .desc h3 {
+  line-height: 1.3;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+}
+.services-1 .desc h3:hover {
+  color: #000;
+}
+
+.services-1 .desc h3:after {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 30px;
+  height: 1px;
+  background: #ffbd39;
+  margin: 0 auto;
+}
+
+.services-1:hover h3:after {
+  background: #000000;
 }
