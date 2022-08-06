@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 import NavigationBar from "./components/navigation_bar/NavigationBar";
 import Resume from "./components/Resume";
 import Services from "./components/Services";
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <NavigationBar />
+      <Home />
       <About />
       <Resume />
       {/* Some error's in Services Component */}

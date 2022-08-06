@@ -256,6 +256,112 @@ a:hover {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
+/* Home Section */
+#intro {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin-top: 120px;
+  min-height: 500px;
+  display: table;
+  position: relative;
+  text-align: center;
+}
+
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.85;
+}
+.intro-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transform: translateY(-2.1rem);
+  -ms-transform: translateY(-2.1rem);
+  transform: translateY(-2.1rem);
+}
+.intro-content .row {
+  width: 94%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.intro-content .row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.col-twelve,
+.col-full {
+  width: 100%;
+  padding: 0 2rem;
+  float: left;
+}
+.intro-content h5 {
+  color: #ffbd39;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+@media screen and (max-width: 768px) {
+  .intro-content h5 {
+    font-size: 2rem;
+  }
+  .intro-content h1 {
+    font-size: 3rem;
+  }
+}
+
+.intro-content h1 {
+  color: #ffffff;
+  font-family: "poppins-medium", sans-serif;
+  font-size: 5rem;
+  line-height: 1.071;
+  max-width: 900px;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 0 20px rgb(0 0 0 / 50%);
+}
+
+.intro-content .intro-position {
+  font-family: "lora-regular", serif;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+  text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+.intro-content .intro-position span {
+  display: inline-block;
+}
+.intro-content .intro-position span:first-child::before {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 14px 0 8px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.intro-content .intro-position span::after {
+  content: "|";
+  text-align: center;
+  display: inline-block;
+  padding: 0 8px 0 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* About Section */
 .ftco-no-pb {
