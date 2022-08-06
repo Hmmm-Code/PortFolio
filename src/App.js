@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import NavigationBar from "./components/navigation_bar/NavigationBar";
 import Resume from "./components/Resume";
 import Services from "./components/Services";
@@ -18,6 +19,7 @@ function App() {
       {/* Project Section in Developemnt */}
       {/* Project Section */}
       <Contact />
+      <Footer />
     </>
   );
 }

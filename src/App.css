@@ -47,6 +47,7 @@ code {
 li {
   display: list-item;
   text-align: -webkit-match-parent;
+  list-style: none;
 }
 a {
   -webkit-transition: 0.3s all ease;
@@ -664,4 +665,104 @@ a:hover {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   font-size: 15px;
+}
+
+/* Footer Section */
+.ftco-footer {
+  font-size: 16px;
+  background: #000000;
+  padding: 7em 0;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .col-md {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+.ftco-footer .ftco-footer-widget h2 {
+  font-weight: normal;
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.ftco-footer p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ftco-footer .ftco-footer-widget ul li {
+  margin-bottom: 10px;
+}
+.ftco-footer-social li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-feature-settings: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook {
+  transition: 500ms;
+}
+.icon-linkedin {
+  transition: 500ms;
+}
+.icon-github {
+  transition: 500ms;
+}
+
+.icon-facebook:hover {
+  font-size: 50px;
+}
+.icon-linkedin:hover {
+  font-size: 50px;
+}
+.icon-github:hover {
+  font-size: 50px;
+}
+
+/* .col-md {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+} */
+
+@media (min-width: 768px) {
+  .ml-md-4,
+  .mx-md-4 {
+    margin-left: 1.5rem !important;
+  }
+}
+.block-23 ul {
+  padding: 0;
+}
+
+.block-23 ul li .icon {
+  width: 40px;
+  font-size: 18px;
+  padding-top: 2px;
+  color: white;
+}
+
+.block-23 ul li .icon,
+.block-23 ul li .text {
+  display: table-cell;
+  vertical-align: top;
 }
