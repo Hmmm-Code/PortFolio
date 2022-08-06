@@ -69,7 +69,9 @@ const Contact = () => {
               </div>
               <h3 class="mb-4">Website</h3>
               <p>
-                <a href="#">Linkedin</a>
+                <a href="https://www.linkedin.com/in/muhammad-sohaib-khan-1b7108220/">
+                  Linkedin
+                </a>
               </p>
             </div>
           </div>

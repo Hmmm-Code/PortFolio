@@ -5,7 +5,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import MailIcon from "@mui/icons-material/Mail";
-import PreviewIcon from "@mui/icons-material/Preview";
 
 const Footer = () => {
   return (
