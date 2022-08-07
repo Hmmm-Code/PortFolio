@@ -115,7 +115,6 @@ a:hover {
   }
 }
 .ftco-navbar-light {
-  background: transparent !important;
   position: absolute;
   top: 0;
   left: 0;
@@ -165,6 +164,7 @@ a:hover {
   font-size: 20px;
   letter-spacing: 0.1em;
 }
+
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.5);
   border-color: rgba(255, 255, 255, 0.1);
@@ -176,6 +176,21 @@ a:hover {
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .ftco-navbar-light .navbar-nav {
+    padding-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .collapse {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    background-color: #000;
   }
 }
 
@@ -256,6 +271,14 @@ a:hover {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+}
+
 /* Home Section */
 #intro {
   -webkit-background-size: cover;

@@ -1,12 +1,23 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const NavigationBar = () => {
-  const toggleButton = () => {};
+  const ref = useRef(null);
+  const [ariaExpanded, setAreaExpended] = useState(false);
+  const toggleButton = (e) => {
+    console.log(e.target.ariaExpanded);
+    e.target.classList.toggle("active");
+    if (!ariaExpanded) {
+      setAreaExpended(true);
+    } else {
+      setAreaExpended(false);
+    }
+    ref.current.classList.toggle("show");
+  };
   //   Pending work make toggle button work in mobile view screen work
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target">
+      <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target sticky">
         <div className="container sec-container">
           <a href="#home-section" className="navbar-brand">
             Muhammad Sohaib
@@ -17,13 +28,13 @@ const NavigationBar = () => {
             data-toggle="collapse"
             data-target="#ftco-nav"
             aria-controls="ftco-nav"
-            aria-expanded="false"
+            aria-expanded={ariaExpanded}
             aria-label="Toggle navigation"
             onClick={toggleButton}
           >
             <MenuIcon fontSize="large" /> Menu
           </button>
-          <div className="navbar-collapse collapse" id="ftco-nav">
+          <div className="navbar-collapse collapse" ref={ref} id="ftco-nav">
             <ul className="navbar-nav nav ml-auto">
               <li className="nav-item">
                 <a href="#home-section" className="nav-link active">
