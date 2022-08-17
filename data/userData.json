@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Muhammad Sohaib Khan",
+    "dot": "17/04/1998",
+    "address": "Sharjah UAE",
+    "zip code": "0000",
+    "email": "skcbskcb0@gmail.com",
+    "phone": "+971582361890",
+    "projects": "10",
+    "into": "Innovative Front End Developer with 2 years experience building and maintaining responsive websites in the recruiting industry. Proficient in HTML, CSS, JAVASCRIPT, REACT: plus modern libraries and frameworks. Passionate about usability and possess working knowledge of FIGMA",
+    "role": ["Front-end-developer", "ui/ux developer"],
+    "skills": [
+      "Javascript",
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Mangodb",
+      "SEO",
+      "FIGMA",
+      "Java",
+      "Python",
+      "MUI",
+      "Android-Studio",
+      "Adobe PS"
+    ],
+    "education": ["BS in Computer Science", "Diploma In Information Tecnology"],
+    "school": ["UNIVERSITY OF GUJRAT", "GOVT. COLLAGE OF TECHNOLOGY"],
+    "experience": ["Front End Developer", "Computer Operator"],
+    "company": ["HOSTOLLO", "AMMAR AMJAD COTTON INDUSTRY"]
+  }
+]
