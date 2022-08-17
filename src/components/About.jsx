@@ -7,9 +7,9 @@ const About = () => {
       id="about-section"
     >
       <div className="container sec-container">
-        <div className="row d-flex">
-          <div className="col-md-6 col-lg-5 d-flex">
-            <div className="img-about img d-flex align-items-stretch">
+        <div className="row d-flex content-center">
+          <div className="col-md-6 col-lg-5 d-flex d-none-img">
+            <div className="img-about img d-flex align-items-stretch ">
               <div className="overlay"></div>
               <div
                 className="img d-flex align-self-stretch align-items-center"
@@ -17,8 +17,8 @@ const About = () => {
               ></div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div className="row justify-content-start pb-3">
+          <div className="col-md-6 col-lg-7 pl-lg-5 pb-5 content-center-about">
+            <div className="row justify-content-center pb-3">
               <div className="col-md-12 heading-section ftco-animate fadeInUp ftco-animated">
                 <h1 className="big">About</h1>
                 <h2 className="mb-4">About Me</h2>

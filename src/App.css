@@ -228,6 +228,7 @@ a:hover {
   color: #fff;
   font-weight: 600;
   opacity: 1 !important;
+  transition: 3000ms;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link span {
@@ -438,6 +439,34 @@ a:hover {
   border-radius: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  #bg-image {
+    display: none !important;
+  }
+  .d-none-img {
+    display: none !important;
+  }
+  .content-center {
+    justify-content: center !important;
+    text-align: center;
+  }
+  .content-center .content-center-about {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .content-center .content-center-about ul {
+    flex-direction: column;
+
+    width: 50% !important;
+  }
+  .content-center .content-center-about .counter-wrap {
+    justify-content: center;
+  }
+  .content-center .content-center-about h1 {
+    right: 0;
+  }
+}
+
 @media (min-width: 992px) {
   .pl-lg-5,
   .px-lg-5 {
@@ -531,6 +560,7 @@ a:hover {
   letter-spacing: 2px;
   font-weight: 600;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .btn.btn-primary {
