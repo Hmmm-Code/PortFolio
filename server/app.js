@@ -1,13 +1,9 @@
-const fs = require("fs");
+// const fs = require("fs");
 const express = require("express");
 const app = express();
-const user = JSON.parse(fs.readFileSync(`${__dirname}/../data/userData.json`));
+// const user = JSON.parse(fs.readFileSync(`${__dirname}/../data/userData.json`));
+const userRouter = require("./routes/userRoute");
 
-app.get("/api/v1/user", (req, res) => {
-  res.status(200).json({
-    status: "sucess",
-    data: {
-      user,
-    },
-  });
-});
+app.use("/api/v1/users", userRouter);
+
+module.exports = app;
