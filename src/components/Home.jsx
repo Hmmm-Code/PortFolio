@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "../components/assets/Sohaib_Resume.pdf";
 
 const Home = () => {
   return (
@@ -15,7 +16,12 @@ const Home = () => {
               <span>UI/UX Designer</span>
             </p>
 
-            <a className="btn btn-primary py-3 px-3" href="#about" title="">
+            <a
+              className="btn btn-primary py-3 px-3"
+              href={Resume}
+              title=""
+              download={Resume}
+            >
               Download CV
             </a>
           </div>

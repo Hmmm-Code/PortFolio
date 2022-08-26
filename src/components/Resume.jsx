@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../components/assets/Sohaib_Resume.pdf";
 
 const Resume = () => {
   return (
@@ -67,7 +68,11 @@ const Resume = () => {
         <div className="row justify-content-center mt-5">
           <div className="col-md-6 text-center ftco-animate fadeInUp ftco-animated">
             <p>
-              <a href="#" className="btn btn-primary py-4 px-5">
+              <a
+                href={resume}
+                className="btn btn-primary py-4 px-5"
+                download={resume}
+              >
                 Download CV
               </a>
             </p>

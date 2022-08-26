@@ -1,4 +1,5 @@
 import React from "react";
+import Resume from "../components/assets/Sohaib_Resume.pdf";
 
 const About = () => {
   const persnalInfo = [
@@ -56,9 +57,13 @@ const About = () => {
                   <span> Project completed</span>
                 </p>
                 <p>
-                  <button href="#" className="btn btn-primary py-3 px-3">
+                  <a
+                    href={Resume}
+                    className="btn btn-primary py-3 px-3"
+                    download={Resume}
+                  >
                     Download CV
-                  </button>
+                  </a>
                   <button href="#" className="btn btn-primary py-3 px-3">
                     Hire me
                   </button>

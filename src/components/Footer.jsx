@@ -10,8 +10,8 @@ const Footer = () => {
   return (
     <footer className="ftco-footer ftco-section">
       <div className="container sec-container">
-        <div className="row mb-5">
-          <div className="col-md">
+        <div className="row mb-5 ">
+          <div className="col-md adjust">
             <div className="ftco-footer-widget mb-4">
               <h2 className="ftco-heading-2">About</h2>
               <p>
