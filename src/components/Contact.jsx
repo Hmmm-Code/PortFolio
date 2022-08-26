@@ -48,7 +48,7 @@ const Contact = () => {
 
         <div className="row d-flex contact-info mb-5">
           {contactData.map((items) => (
-            <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+            <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated adjust">
               <div className="align-self-stretch box p-4 text-center">
                 <div className="icon d-flex align-items-center justify-content-center">
                   <span className="icon-map-signs">{items.icon}</span>
@@ -64,7 +64,7 @@ const Contact = () => {
         </div>
 
         <div className="row no-gutters block-9 justify-content-center">
-          <div className="col-md-6 order-md-last d-flex">
+          <div className="col-md-6 order-md-last d-flex ">
             <form action="#" className="bg-light p-4 p-md-5 contact-form">
               <div className="form-group">
                 <input

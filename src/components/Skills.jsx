@@ -12,15 +12,13 @@ const Skills = () => {
     { name: "JAVA", level: "50%", style: { width: "50% " } },
     { name: "Python", level: "50%", style: { width: "50% " } },
   ];
-  const style = {
-    width: "10%",
-  };
+
   // implement the feature tu adjust skills level dynamically
   return (
     <section className="ftco-section" id="skills-section">
       <div className="container sec-container">
         <div className="row justify-content-center pb-5">
-          <div className="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated">
+          <div className="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated ">
             <h1 className="big big-2">Skills</h1>
             <h2 className="mb-4">My Skills</h2>
             <p>These are the skills that am proficent in.</p>
@@ -28,7 +26,7 @@ const Skills = () => {
         </div>
         <div className="row">
           {skills.map((items) => (
-            <div className="col-md-6 animate-box">
+            <div className="col-md-6 animate-box adjust">
               <div className="progress-wrap ftco-animate fadeInUp ftco-animated">
                 <h3>{items.name}</h3>
                 <div className="progress">
