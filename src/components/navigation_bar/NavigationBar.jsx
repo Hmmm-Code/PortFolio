@@ -5,6 +5,16 @@ const NavigationBar = () => {
   const refCollapse = useRef(null);
   const [ariaExpanded, setAreaExpended] = useState(false);
 
+  const navButtons = [
+    { name: "Home", link: "#home-section" },
+    { name: "About", link: "#about-section" },
+    { name: "Resume", link: "#resume-section" },
+    { name: "Services", link: "#services-section" },
+    { name: "Skills", link: "#skills-section" },
+    { name: "Projects", link: "#projects-section" },
+    { name: "Contact", link: "#contact-section" },
+  ];
+
   const HandleNavClick = (e) => {
     console.log(e);
     // e.target.parentElement.classList.toggle("active");
@@ -46,42 +56,13 @@ const NavigationBar = () => {
             id="ftco-nav"
           >
             <ul onClick={HandleNavClick} className="navbar-nav nav ml-auto">
-              <li className="nav-item">
-                <a href="#home-section" className="nav-link active">
-                  <span>Home</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#about-section" className="nav-link">
-                  <span>About</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#resume-section" className="nav-link">
-                  <span>Resume</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#services-section" className="nav-link">
-                  <span>Services</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#skills-section" className="nav-link">
-                  <span>Skills</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="#projects-section" className="nav-link">
-                  <span>Projects</span>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="#contact-section" className="nav-link">
-                  <span>Contact</span>
-                </a>
-              </li>
+              {navButtons.map((items) => (
+                <li className="nav-item">
+                  <a href={items.link} className="nav-link">
+                    <span>{items.name}</span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
