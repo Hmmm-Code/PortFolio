@@ -1,6 +1,15 @@
 import React from "react";
 
 const About = () => {
+  const persnalInfo = [
+    { name: "Name:", data: "Muhammad Sohaib Khan" },
+    { name: "Date of birth:", data: "April 17, 1998" },
+    { name: "Address:", data: "Sharjah UAE" },
+    { name: "Zip code:", data: "00000" },
+    { name: "Phone:", data: "+971582361890" },
+    { name: "Email:", data: "skcbskcb0@gmail.com" },
+  ];
+
   return (
     <section
       className="ftco-about img ftco-section ftco-no-pb"
@@ -30,24 +39,11 @@ const About = () => {
                   and possess working knowledge of FIGMA
                 </p>
                 <ul className="about-info mt-4 px-md-0 px-2">
-                  <li className="d-flex">
-                    <span>Name:</span> <span>Muhammad Sohaib Khan</span>
-                  </li>
-                  <li className="d-flex">
-                    <span>Date of birth:</span> <span>April 17, 1998</span>
-                  </li>
-                  <li className="d-flex">
-                    <span>Address:</span> <span>Sharjah UAE</span>
-                  </li>
-                  <li className="d-flex">
-                    <span>Zip code:</span> <span>0000</span>
-                  </li>
-                  <li className="d-flex">
-                    <span>Email:</span> <span>skcbskcb0@gmail.com</span>
-                  </li>
-                  <li className="d-flex">
-                    <span>Phone: </span> <span>+971582361890</span>
-                  </li>
+                  {persnalInfo.map((items) => (
+                    <li className="d-flex">
+                      <span>{items.name}</span> <span>{items.data}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -60,12 +56,12 @@ const About = () => {
                   <span> Project completed</span>
                 </p>
                 <p>
-                  <a href="#" className="btn btn-primary py-3 px-3">
+                  <button href="#" className="btn btn-primary py-3 px-3">
                     Download CV
-                  </a>
-                  <a href="#" className="btn btn-primary py-3 px-3">
+                  </button>
+                  <button href="#" className="btn btn-primary py-3 px-3">
                     Hire me
-                  </a>
+                  </button>
                 </p>
               </div>
             </div>

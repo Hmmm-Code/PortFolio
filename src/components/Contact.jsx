@@ -5,6 +5,30 @@ import MailIcon from "@mui/icons-material/Mail";
 import PreviewIcon from "@mui/icons-material/Preview";
 
 const Contact = () => {
+  const contactData = [
+    { name: "Address", icon: <HomeIcon />, link: "", data: "Sharjah UAE" },
+    {
+      name: "Contact Number",
+      icon: <ContactsIcon />,
+      link: "tel://1234567920",
+      data: "+971 58 2361 890",
+    },
+    {
+      name: "Email",
+      icon: <MailIcon />,
+      link: "mailto:info@yoursite.com",
+      data: "skcbskcb0@gmail.com",
+    },
+    {
+      name: "Linkedin",
+      icon: <PreviewIcon />,
+      link: "https://www.linkedin.com/in/muhammad-sohaib-khan-1b7108220/",
+      data: "Linkedin",
+    },
+  ];
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <section
       className="ftco-section contact-section ftco-no-pb"
@@ -23,58 +47,20 @@ const Contact = () => {
         </div>
 
         <div className="row d-flex contact-info mb-5">
-          <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
-            <div className="align-self-stretch box p-4 text-center">
-              <div className="icon d-flex align-items-center justify-content-center">
-                <span className="icon-map-signs">
-                  <HomeIcon />
-                </span>
+          {contactData.map((items) => (
+            <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
+              <div className="align-self-stretch box p-4 text-center">
+                <div className="icon d-flex align-items-center justify-content-center">
+                  <span className="icon-map-signs">{items.icon}</span>
+                </div>
+                <h3 className="mb-4">{items.name}</h3>
+                <p>
+                  {" "}
+                  <a href={items.link}>{items.data}</a>
+                </p>
               </div>
-              <h3 className="mb-4">Address</h3>
-              <p>Sharjah UAE</p>
             </div>
-          </div>
-          <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
-            <div className="align-self-stretch box p-4 text-center">
-              <div className="icon d-flex align-items-center justify-content-center">
-                <span className="icon-map-signs">
-                  <ContactsIcon />
-                </span>
-              </div>
-              <h3 className="mb-4">Contact Number</h3>
-              <p>
-                <a href="tel://1234567920">+971 58 2361 890</a>
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
-            <div className="align-self-stretch box p-4 text-center">
-              <div className="icon d-flex align-items-center justify-content-center">
-                <span className="icon-map-signs">
-                  <MailIcon />
-                </span>
-              </div>
-              <h3 className="mb-4">Email Address</h3>
-              <p>
-                <a href="mailto:info@yoursite.com">skcbskcb0@gmail.com</a>
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3 d-flex ftco-animate fadeInUp ftco-animated">
-            <div className="align-self-stretch box p-4 text-center">
-              <div className="icon d-flex align-items-center justify-content-center">
-                <span className="icon-map-signs">
-                  <PreviewIcon />
-                </span>
-              </div>
-              <h3 className="mb-4">Website</h3>
-              <p>
-                <a href="https://www.linkedin.com/in/muhammad-sohaib-khan-1b7108220/">
-                  Linkedin
-                </a>
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="row no-gutters block-9 justify-content-center">
@@ -113,6 +99,7 @@ const Contact = () => {
               </div>
               <div className="form-group">
                 <input
+                  onClick={handleSubmit}
                   type="submit"
                   value="Send Message"
                   className="btn btn-primary py-3 px-5"
